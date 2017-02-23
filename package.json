@@ -1,0 +1,12 @@
+{
+  "name": "web-systems-lecture",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "export NODE_ENV=test && mocha --reporter spec --recursive"
+  },
+  "author": "Eric Anderson",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^3.2.0"
+  }
+}
