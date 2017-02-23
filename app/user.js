@@ -1,17 +1,17 @@
-class User {
+function User (name) {
+  this.name = name;
+}
 
-  constructor (name) {
-    this.name = name;
-  }
+User.prototype.getName = function () {
+  // todo
+}
 
-  getName () {
-    return this.name;
-  }
+User.prototype.setName = function () {
+  // todo
+}
 
-  setName (newName) {
-    this.name = newName;
-  }
-
+User.prototype.save = function () {
+  // todo
 }
 
 module.exports = User;
