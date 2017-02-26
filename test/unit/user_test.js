@@ -1,14 +1,20 @@
 'use strict';
 
-let assert = require('assert');
+let assert = require('chai').assert;
 let User = require('../../app/user');
+let db = require('../../app/db');
 
-describe('User', function() {
+describe('User: Unit Tests', function() {
+
+  beforeEach(function(){
+    this.user = new User('Eric');
+  });
 
   describe('#getName()', function() {
 
     it('should return the users name', function() {
-      // todo
+      let user = new User('Eric');
+      assert.strictEqual('Eric', user.getName());
     });
 
   });
@@ -16,7 +22,8 @@ describe('User', function() {
   describe('#setName()', function() {
 
     it('should set the name on the user', function() {
-      // todo
+      this.user.setName('Alexa');
+      assert.strictEqual('Alexa', this.user.getName());
     });
 
   });
