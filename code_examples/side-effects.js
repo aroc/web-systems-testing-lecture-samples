@@ -1,9 +1,3 @@
-var activities = {
-  'writes code',
-  'writes more code',
-  'snowboard'
-};
-
 function listUserActivities(name, activities) {
   for (var i=0; i<=activities.length; i++) {
     activities[i] = name + " likes to " + activities[i] // Bad. Changes activities (Arrays and Objects are passed by reference in JS).
@@ -18,3 +12,5 @@ function listUserActivities(name, activities) {
   }
   return formattedActivities;
 }
+
+// Could have used .map above to be more efficient.

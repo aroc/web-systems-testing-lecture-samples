@@ -2,7 +2,24 @@
 //
 // let assert = require('chai').assert;
 //
-// describe('Examples Tests', function() {
+// function getTrueValueAsync(callback) {
+//   setTimeout(function(){
+//     callback(true);
+//   }, 1000);
+// }
+//
+//
+// describes('Examples Tests', function() {
+//
+//   describe('async fucntion', function(){
+//
+//     it('should be true', function(){
+//       getTrueValueAsync(function(value){
+//         assert.isFalse(value);
+//       });
+//     });
+//
+//   });
 //
 //   describe('#deepEqual()', function() {
 //
